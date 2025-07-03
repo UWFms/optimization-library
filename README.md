@@ -72,8 +72,11 @@ post_processing_integer_approximation_logs(results, visual=True, file_print=True
 A console application demonstrating the usage of the library is available in the GitHub repository under the examples/ directory. Run it with:
 ```bash
 git clone https://github.com/UWFms/optimization-library.git
-cd optimization-library/examples
-python main.py
+cd optimization-library
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python example\main.py
 ```
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
