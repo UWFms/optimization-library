@@ -24,6 +24,7 @@ Requirements
 - matplotlib~=3.10.3
 - PuLP~=3.2.1
 - scipy~=1.15.3
+- openpyxl~=3.1.5
 
 # Usage
 Linear Programming
@@ -36,7 +37,7 @@ A = np.array([[1, 1], [2, 1]], dtype=float)
 b = np.array([4, 5], dtype=float)
 methods = ["simplex", "ADMM"]
 
-results = [solve_lp(method, c, A, b, epsilon=1e-6, is_maximization=True) for method in methods]
+results = [solve_lp(method, c, A, b, epsi=1e-6, is_maximization=True) for method in methods]
 post_processing_linear_approximation_logs(results, visual=True, file_print=True)
 ```
 Nonlinear Programming
